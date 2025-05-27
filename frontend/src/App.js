@@ -14,9 +14,6 @@ function App() {
   const [input, setInput] = useState('');
   const chatEndRef = useRef(null);
 
-  useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
 
   const handleSend = async (e) => {
     e.preventDefault();
